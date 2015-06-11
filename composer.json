@@ -1,0 +1,33 @@
+{
+    "name": "matriphe/gcm",
+    "description": "Simple GCM push using Guzzle.",
+    "keywords": [
+        "laravel", "gcm", "android", "push", "laravel", "notification", "guzzle"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhammad Zamroni",
+            "email": "halo@matriphe.com",
+            "homepage": "https://matriphe.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*",
+        "guzzlehttp/guzzle": "6.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Matriphe\\Gcm\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
