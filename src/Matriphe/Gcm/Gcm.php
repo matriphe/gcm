@@ -32,7 +32,7 @@ class Gcm
         }
         
         $body = [
-            'registration_ids' => $gcm_id,
+            'registration_ids' => [$gcm_id],
             'data' => $messages,
         ];
         
