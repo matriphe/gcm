@@ -36,6 +36,8 @@ php artisan vendor:publish
 ```
 After running this command, there will be `config/gcm.php` and `resources/views/vendor/gcm/form.blade.php` files.
 
+Please fill the `appKey` section in the `config/gcm.php`.
+
 ## Usage
 
 Just use the `push($device_id, $gcm_id, $subject, $message, $extras = [])` function and it will push the message to GCM.
