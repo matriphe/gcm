@@ -12,8 +12,7 @@ Route::any('matriphe/gcm', function()
         
         $result = Gcm::push($device_id, $gcm_id, $subject, $message);
         
-        echo '<pre>'.print_r($result, 1).'</pre>';
-        echo '<hr>';
+        $data['result'] = $result;
     }
     
     return view('gcm::form')->with($data);
