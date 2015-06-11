@@ -8,16 +8,15 @@ class Gcm
 {
     protected $client;
     
-    public function __construct(Client $client, Config $config)
+    public function __construct()
     {
-        $this->client = $client;
-        $this->config = $config;
+        $this->client = new Client;
     }
     
     public function push($device_id, $gcm_id, $subject = null, $message = null, $extras = [])
     {
         $headers = [ 
-			'Authorization' => 'key=' . $this->config->get('gcm.apiKey'),
+			'Authorization' => 'key=' . Config::get('gcm.apiKey'),
 			'Content-Type' => 'application/json',
 		];
 		
@@ -37,7 +36,7 @@ class Gcm
             'data' => $messages,
         ];
         
-        $request = $this->client->post($this->config->get('gcm.url'),
+        $request = $this->client->post(Config::get('gcm.url'),
 		[
     		'headers' => $headers,
     		'json' => $body,
