@@ -2,7 +2,7 @@
 namespace Matriphe\Gcm;
 
 use Config;
-use GuzzleHttp\Client;
+use \GuzzleHttp\Client;
 
 class Gcm
 {
