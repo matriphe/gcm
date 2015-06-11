@@ -1,6 +1,6 @@
 <?php
 
-Route::any('gcm', function() 
+Route::any('matriphe/gcm', function() 
 {
     $data = [];
     
