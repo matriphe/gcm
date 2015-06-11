@@ -73,3 +73,6 @@ stdClass Object
 
 )
 ```
+## Test
+
+It has routes, so you can go to `/matriphe/gcm`on your URL and try to send the GCM notification.
