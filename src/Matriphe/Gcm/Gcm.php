@@ -2,7 +2,7 @@
 namespace Matriphe\Gcm;
 
 use Config;
-use GuzzleHttp\Client;;
+use GuzzleHttp\Client;
 
 class Gcm
 {
@@ -10,7 +10,7 @@ class Gcm
     
     public function __construct()
     {
-        $this->client = new GuzzleHttp\Client;
+        $this->client = new Client;
     }
     
     public function push($device_id, $gcm_id, $subject = null, $message = null, $extras = [])
