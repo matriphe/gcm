@@ -29,5 +29,5 @@
             "Matriphe\\Gcm\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
