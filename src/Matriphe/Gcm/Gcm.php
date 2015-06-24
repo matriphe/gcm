@@ -22,7 +22,7 @@ class Gcm
 		
 		$messages = [
 		    'subject' => $subject,
-			'messages' => $message,
+			'message' => $message,
 			'device_id' => $device_id,
 			'gcm_id' => $gcm_id,
         ];
