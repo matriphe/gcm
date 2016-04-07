@@ -35,7 +35,7 @@ class Gcm
             'registration_ids' => [$gcm_id],
             'data' => $messages,
         ];
-        
+        $this->client->setDefaultOption('verify', false);
         $request = $this->client->post(Config::get('gcm.url'),
 		[
     		'headers' => $headers,
